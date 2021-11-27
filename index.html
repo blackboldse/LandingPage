@@ -12,23 +12,41 @@
 </head>
 <body>
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
-        <img src="" alt="logoZulu" id="header-img">
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="home" class="nav-link"></a>Home</li>
-                <li><a href="product" class="nav-link"></a>Product</li>
-                <li><a href="pricing" class="nav-link"></a>Pricing</li>
-                <li><a href="about" class="nav-link"></a>About</li>
-            </ul>
-        </nav>
-    </header>
-    <section id="hero">
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
-            <input type="submit" name="submit" id="submit" class="btn-submit">
-        </form>
-    </section>
+    <div class="wrapper">
+        <div class="container">
+            <header id="header" class="header">
+                <a href="index.html" class="header-logo">
+                    <img src="" alt="logoZulu" id="header-img" class="header-logo-img">
+                </a>
+                <nav id="nav-bar">
+                    <ul class="nav-menu">
+                        <li class="nav-items">
+                            <a href="home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="product" class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="pricing" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="about" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-auth">
+                    <a href="#" class="button">Login</a>
+                    <a href="#" class="button button--primary">Signup</a>
+                </div>
+            </header>
+            <section class="contact">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <input type="submit" name="submit" id="submit" class="btn-submit">
+                </form>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <span class="footer_copyright">
