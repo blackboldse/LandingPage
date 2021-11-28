@@ -1,6 +1,7 @@
 :root {
     font-size: 10px;
     --grey-dark:#272E35;
+    --grey-light: #6e757c;
     --white: #FFFFFF;
     --primary-color: #5799FF;
 }
@@ -15,12 +16,11 @@
 }
 
 html, body {
-    height: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family:  'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     font-size: 1.6rem;
     font-weight:400;
@@ -43,8 +43,8 @@ input, button, textarea, select {
   */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    font-size:100%;
-	font-weight:400;
+    /* font-size:100%;
+	font-weight:400; */
 }
 
 ul, li, a{
@@ -54,6 +54,10 @@ ul, li, a{
 
 a{
 	text-decoration:none;
+}
+
+span {
+    display: block;
 }
 
 .wrapper {
@@ -94,19 +98,76 @@ a{
     color: var(--primary-color);
 }
 
-.button {
+.button,
+.button--submit {
     display: inline-block;
     font-size: 1.6rem;
-    color: var(--grey-dark);
     border-radius: 2rem;
     padding: 2rem 4.5rem;
     outline: none;
     cursor: pointer;
-    background-color: transparent;
     line-height: normal;
 }
 
-.button--primary {
+.button--primary,
+.button--submit {
     color: var(--white);
     background-color: var(--primary-color);
+    border: none;
+}
+
+.button--outline {
+    border: .2rem solid var(--grey-light);
+    color: var(--grey-light);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner {
+    width: 40%;
+}
+
+.hero-banner--image {
+    width: 60%;
+}
+
+.hero-banner--heading {
+    font-size: 5.5rem;
+    line-height: 1.4;
+    color: var(--grey-dark);
+    padding-top: 5rem;
+    margin-bottom: 3rem
+}
+
+.hero-banner--description{
+    color: var(--grey-light);
+    margin-bottom: 5rem;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.email-form input:focus {
+    background-color: #e9ecef;
+
+}
+
+#email {
+    width: 30%;
+}
+
+input {
+    padding: 0 1.4rem;
+    border-radius: 1.4rem;
+    border: .2rem solid gray;
+}
+
+.button--submit {
+    margin-left: 1.5rem;
 }

@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
+
 </head>
 <body>
-    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="wrapper">
         <div class="container">
             <header id="header" class="header">
                 <a href="index.html" class="header-logo">
-                    <img src="" alt="logoZulu" id="header-img" class="header-logo-img">
+                    <img id="header-img"  src="/image/logoZulu.png" srcset="/image/logoZulu.png 2x" alt="logoZulu">
                 </a>
                 <nav id="nav-bar">
                     <ul class="nav-menu">
@@ -35,25 +35,43 @@
                     </ul>
                 </nav>
                 <div class="header-auth">
-                    <a href="#" class="button button--login">Login</a>
+                    <a href="#" class="button button--normal">Login</a>
                     <a href="#" class="button button--primary">Signup</a>
                 </div>
             </header>
+            <section class="hero">
+                <div class="hero-banner">
+                    <h1 class="hero-banner--heading">
+                        <span>Make a</span> <span>big impact</span> <span>with exciting</span> videos.
+                    </h1>
+                    <p class="hero-banner--description">
+                        It's simple discover, engage, and expand your audience with videos marketing software.
+                    </p>
+                    <div class="button-links">
+                        <a href="#" class="button button--primary">Get started</a>
+                        <a href="#" class="button button--outline">How it works?</a>
+                    </div>
+                </div>
+                <img srcset="/image/banner--hero.png 2x" alt="banner-marketing" class="hero-banner--image">
+            </section>
             <section class="contact">
-                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <form class="email-form" action="https://www.freecodecamp.com/email-submit" id="form">
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                    <input type="submit" name="submit" id="submit" class="btn-submit">
+                    <input type="submit" name="submit" id="submit" class="button button--submit">
                 </form>
             </section>
+            <!-- <iframe id="video" src="" frameborder="0">
+            </iframe> -->
         </div>
     </div>
 
     <footer>
         <span class="footer_copyright">
             <div class="footer_copyright-bottom">
-                <!-- © 2021-present BlackBold. All Rights Reserved. -->
+                © 2021-present BlackBold. All Rights Reserved.
             </div>
         </span>
     </footer>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
