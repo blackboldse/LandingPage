@@ -16,21 +16,21 @@
         <div class="container">
             <header id="header" class="header">
                 <a href="index.html" class="header-logo">
-                    <img id="header-img"  src="./assets/logo.png" srcset="./assets/logo.png 2x" alt="logoZulu">
+                    <img id="header-img"  src="./assets/img/logo.png" srcset="./assets/img/logo.png 2x" alt="logoZulu">
                 </a>
                 <nav id="nav-bar">
                     <ul class="nav-menu">
                         <li class="nav-items">
-                            <a href="home" class="nav-link">Home</a>
+                            <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-items">
-                            <a href="product" class="nav-link">Product</a>
+                            <a href="#product" class="nav-link">Product</a>
                         </li>
                         <li class="nav-items">
-                            <a href="pricing" class="nav-link">Pricing</a>
+                            <a href="#pricing" class="nav-link">Pricing</a>
                         </li>
                         <li class="nav-items">
-                            <a href="about" class="nav-link">About</a>
+                            <a href="#about" class="nav-link">About</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,26 +52,35 @@
                         <a href="#" class="button button--outline">How it works?</a>
                     </div>
                 </div>
-                <img src="./assets/hero.png" srcset="./assets/hero.png 2x" alt="banner-marketing" class="hero-banner--image">
+                <img src="./assets/img/hero.png" srcset="./assets/img/hero.png 2x" alt="banner-marketing" class="hero-banner--image">
             </section>
             <section class="contact">
-                <form class="email-form" action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <form id="form" class="email-form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter your email..." required>
                     <input type="submit" name="submit" id="submit" class="button button--submit">
                 </form>
+            </section>
+            <section class="work">
+                <div class="block">
+                    <span class="block-caption">Walk-Through</span>
+                    <h2 class="block-title">
+                        <span>How does</span> <span>Zulu works?</span>
+                    </h2>
+                </div>
             </section>
             <iframe id="video" src="" frameborder="0">
             </iframe>
         </div>
     </div>
 
-    <footer>
-        <span class="footer_copyright">
-            <div class="footer_copyright-bottom">
-                © 2021-present BlackBold. All Rights Reserved.
-            </div>
-        </span>
+    <footer class="footer">
+        <section class="copyright">
+            <section>
+                <p>©2021-present BlackBold. All Rights Reserved.</p>
+            </section>
+        </section>
     </footer>
+
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
