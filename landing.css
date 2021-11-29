@@ -2,7 +2,8 @@
     font-size: 10px;
     --grey-dark:#272E35;
     --grey-light: #6e757c;
-    --white: #FFFFFF;
+    --grey: #f2f4f6;
+    --white: #ffffff;
     --primary-color: #5799FF;
 }
 
@@ -23,7 +24,8 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     font-size: 1.6rem;
-    font-weight:400;
+    font-weight:500;
+    color: var(--grey-dark);
 }
 /*
     6. Improve media defaults
@@ -43,8 +45,6 @@ input, button, textarea, select {
   */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    /* font-size:100%;
-	font-weight:400; */
 }
 
 ul, li, a{
@@ -71,9 +71,16 @@ span {
 }
 
 .header {
-    padding-top: 4rem;
+    position: fixed;
+    background-color: var(--white);
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
+    /* width: 100%; */
+    height: 10rem;
 }
 
 .header-auth {
@@ -97,16 +104,20 @@ span {
 .nav-link:hover {
     color: var(--primary-color);
 }
-
 .button,
 .button--submit {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 1.6rem;
     border-radius: 2rem;
     padding: 2rem 4.5rem;
     outline: none;
     cursor: pointer;
     line-height: normal;
+}
+
+.button-links a:first-child {
+    padding: 2rem 3rem;
+    margin-right: 4rem;
 }
 
 .button--primary,
@@ -124,50 +135,108 @@ span {
 .hero {
     display: flex;
     align-items: center;
+    margin-top: 14.6rem;
 }
 
 .hero-banner {
-    width: 40%;
+    width: 35%;
 }
 
 .hero-banner--image {
-    width: 60%;
+    width: 65%;
 }
 
 .hero-banner--heading {
     font-size: 5.5rem;
     line-height: 1.4;
-    color: var(--grey-dark);
-    padding-top: 5rem;
     margin-bottom: 3rem
 }
 
 .hero-banner--description{
     color: var(--grey-light);
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
-.email-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-}
-
-.email-form input:focus {
-    background-color: #e9ecef;
-
-}
-
-#email {
-    width: 30%;
+.contact {
+    margin-top: 20rem;
 }
 
 input {
-    padding: 0 1.4rem;
-    border-radius: 1.4rem;
-    border: .2rem solid gray;
+    height: 4rem;
+    width: 30%;
 }
 
 .button--submit {
-    margin-left: 1.5rem;
+    padding: 1rem 3rem;
+    width: 14rem;
+    margin-left: 1.4rem;
+}
+
+#email {
+    border-radius: 1rem;
+    padding: 0 1rem;
+    border: .1rem solid var(--grey-light);
+    font-size: 1.4rem;
+}
+
+.email-form {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+}
+.email-form input:focus {
+    background-color: #f3f7fa;
+}
+
+.work {
+    padding-top: 14.5rem;
+    padding-bottom: 6rem;
+    display: block;
+}
+
+.block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block-caption {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    color: var(--grey-light);
+    display: inline-block;
+    position: relative;
+    padding: 0 1rem;
+}
+.block-caption::before {
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+}
+.block-caption::after {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+}
+.block-caption:before,
+.block-caption:after {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 3rem;
+    background-color: var(--primary-color);
+    top: 50%;
+}
+
+.block-title {
+    font-size: 7rem;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    color: var(--grey-light);
+    font-size: 1.3rem;
 }
