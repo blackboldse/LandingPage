@@ -5,6 +5,7 @@
     --grey: #6E757C;
     --grey-dark:#272E35;
     --grey-light: #f3f3f3;
+    --pink: #FF858C;
 }
 
 *, *::before, *::after {
@@ -44,6 +45,7 @@ input, button, textarea, select {
   */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    color: var(--grey-dark);
 }
 
 p {
@@ -59,10 +61,6 @@ a{
 	text-decoration:none;
 }
 
-span {
-    display: block;
-}
-
 .wrapper {
     max-width: 144rem;
 }
@@ -74,13 +72,12 @@ span {
 }
 
 .header {
-    text-align: center;
     background-color: var(--white);
     justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 10rem;
@@ -166,15 +163,6 @@ span {
     line-height: 1.4;
 }
 
-.contact {
-    margin-top: 20rem;
-}
-
-input {
-    height: 4rem;
-    width: 30%;
-}
-
 .button--submit {
     padding: 1rem 3rem;
     width: 14rem;
@@ -253,6 +241,9 @@ input {
 .block-title {
     font-size: 5rem;
 }
+.block-title> span {
+    display: block;
+}
 
 .work-list{
     display: grid;
@@ -299,7 +290,6 @@ input {
     text-overflow: ellipsis;
     width: 100%;
     max-width: 100%;
-    /* word-break: break-word; */
 }
 
 .intro {
@@ -316,8 +306,99 @@ intro > * {
 
 .text-p {
     font-weight: 300;
-    margin: 4rem 0;
+    margin: 3rem 0;
+    color: var(--grey);
 }
+
+.plans-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4.5rem;
+}
+.plans-item {
+    position: relative;
+    border: .1rem solid var(--grey-light);
+    border-radius: 2rem;
+    padding: 7rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.plans-item:hover {
+    border-color: transparent;
+    box-shadow: 0 0 3rem .1rem rgba(0, 0, 0, .06);
+}
+.plans-item:hover .plans-start {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.plans-start {
+    margin: auto auto 0;
+    translate: all .2s linear;
+    display: block;
+    width: max-content;
+}
+.plans-name,
+.plans-price {
+    font-weight: 500;
+}
+
+.plans-price {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    border-bottom: .1rem solid var(--grey-light);
+}
+.plans-dollar {
+    vertical-align: top;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+.plans-month {
+    font-size: 5rem;
+    line-height: 1;
+}
+.plans-features {
+    margin-bottom: 2rem;
+}
+.plans-features-items:last-of-type {
+    margin-bottom: 7.5rem;
+}
+.plans-features-icon{
+    color: var(--grey);
+    margin-right: 1rem;
+    margin-bottom: 2.4rem;
+}
+.plans-most {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0 2rem 0 2rem;
+    font-size: 1.4rem;
+}
+
+
+.contact {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+}
+.form-mess-subscription {
+    width: 20%;
+}
+.form-mess-subscription > span {
+    display: block;
+}
+input {
+    height: 4rem;
+    width: 30%;
+    margin-left: 1rem;
+}
+
 
 .copyright {
     text-align: center;
