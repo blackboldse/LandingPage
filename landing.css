@@ -31,7 +31,6 @@ body {
     6. Improve media defaults
   */
 img, picture, video, canvas, svg {
-    display: block;
     max-width: 100%;
 }
 /*
@@ -61,6 +60,20 @@ a{
 	text-decoration:none;
 }
 
+.grid-gap {
+    display: grid;
+    grid-column-gap: 5rem;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+.fw7 {
+    font-weight: 700;
+}
+
 .wrapper {
     max-width: 144rem;
 }
@@ -74,9 +87,9 @@ a{
 .header {
     background-color: var(--white);
     justify-content: space-around;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -248,7 +261,6 @@ a{
 .work-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 7rem;
 }
 .work-items{
     padding: 4rem 3rem;
@@ -311,9 +323,8 @@ intro > * {
 }
 
 .plans-list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 4.5rem;
+    padding-bottom: 8rem;
 }
 .plans-item {
     position: relative;
@@ -322,6 +333,7 @@ intro > * {
     padding: 7rem 2.5rem;
     display: flex;
     flex-direction: column;
+    translate: all .2s linear;
 }
 .plans-item:hover {
     border-color: transparent;
@@ -338,12 +350,8 @@ intro > * {
     display: block;
     width: max-content;
 }
-.plans-name,
-.plans-price {
-    font-weight: 500;
-}
 
-.plans-price {
+.plans-price{
     margin-top: 2rem;
     padding-bottom: 4rem;
     margin-bottom: 3rem;
@@ -379,6 +387,69 @@ intro > * {
     border-radius: 0 2rem 0 2rem;
     font-size: 1.4rem;
 }
+
+.clients-list{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.clients-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .1rem solid var(--grey-light);
+    border-radius: 2rem;
+    padding: 7rem 2.5rem;
+    text-align: center;
+    display: inline-block;
+    translate: all .2s linear;
+}
+.clients-profile:hover {
+    border-color: transparent;
+    box-shadow: 0 0 3rem .1rem rgba(0, 0, 0, .06);
+}
+
+.clients-image{
+    width: 40%
+}
+
+.clients-name{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.clients-major{
+    color: var(--grey);
+    display: block;
+    border-bottom: .1rem solid var(--grey-light);
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.clients-feedback{
+
+}
+
+.clients-profile{
+
+}
+
+.clients-avatar{
+
+}
+
+.clients-profile{
+
+}
+
+.clients-avatar{
+
+}
+
+.clients-image{
+
+}
+
+
 
 
 .contact {

@@ -7,7 +7,7 @@
     <title>BlackBold Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous"
@@ -65,7 +65,7 @@
                         <span>How does</span> <span>Zulu works?</span>
                     </h2>
                 </div>
-                <div class="work-list">
+                <div class="work-list grid-gap">
                     <div class="work-items">
                         <img srcset="./assets/img/like.png 2x" alt="icon_like" class="work-image">
                         <h3 class="work-title">
@@ -74,7 +74,6 @@
                         <p class="work-desc text-p">
                             All the video generators on the Internet tend to repeat predefined chunks as necessary.
                         </p>
-                        <a href="#" class="button button--outline work-more">Learn more</a>
                     </div>
                     <div class="work-items">
                         <img srcset="./assets/img/chart.png 2x" alt="icon_chart" class="work-image">
@@ -84,7 +83,6 @@
                         <p class="work-desc text-p">
                             It is a long established fact that a reader will be distracted by the readable content of a page.
                         </p>
-                        <a href="#" class="button button--outline work-more">Learn more</a>
                     </div>
                     <div class="work-items">
                         <img srcset="./assets/img/video.png 2x" alt="icon_video" class="work-image">
@@ -94,7 +92,6 @@
                         <p class="work-desc text-p">
                             Presented and promoted using our own product, watch or listen to all of our original videos series.
                         </p>
-                        <a href="#" class="button button--outline work-more">Learn more</a>
                     </div>
                 </div>
             </section>
@@ -120,10 +117,10 @@
                         <span>Select the</span> <span>perfect plan</span>
                     </h2>
                 </div>
-                <ul class="plans-list">
+                <ul class="plans-list grid-gap">
                     <li class="plans-item">
                         <h3 class="plans-name">Basic</h3>
-                        <h4 class="plans-price">
+                        <h4 class="plans-price fw500">
                             <sup class="plans-dollar">$</sup>
                             <span class="plans-month">9</span>
                             <span>/Month</span>
@@ -152,7 +149,7 @@
                         <div class="plans-most">Most popular
                         </div>
                         <h3 class="plans-name">Premium</h3>
-                        <h4 class="plans-price">
+                        <h4 class="plans-price fw500">
                             <sup class="plans-dollar">$</sup>
                             <span class="plans-month">29</span>
                             <span>/Month</span>
@@ -187,7 +184,7 @@
                     </li>
                     <li class="plans-item">
                         <h3 class="plans-name">Business</h3>
-                        <h4 class="plans-price">
+                        <h4 class="plans-price fw500">
                             <sup class="plans-dollar">$</sup>
                             <span class="plans-month">49</span>
                             <span>/Month</span>
@@ -225,6 +222,34 @@
                         <a href="#" class="button button--outline plans-start">Start now</a>
                     </li>
                 </ul>
+            </section>
+            <section class="clients">
+                <div class="block">
+                    <span class="block-caption">What people say</span>
+                    <h2 class="block-title">
+                        <span>Our honorable</span> <span>clients</span>
+                    </h2>
+                </div>
+                <div class="clients-list grid-gap">
+                    <div class="clients-profile">
+                        <img src="./assets/img/client1.png" alt="clients-avatar" class="clients-image">
+                        <h3 class="clients-name fw600">Sherlock Holmes</h3>
+                        <span class="clients-major">Detective</span>
+                        <p class="clients-feedback text-p">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                    </div>
+                    <div class="clients-profile">
+                        <img src="./assets/img/client2.png" alt="clients-avatar" class="clients-image">
+                        <h3 class="clients-name fw600">Alex Smith</h3>
+                        <span class="clients-major">Marketing Head</span>
+                        <p class="clients-feedback text-p">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                    </div>
+                    <div class="clients-profile">
+                        <img src="./assets/img/client3.png" alt="clients-avatar" class="clients-image">
+                        <h3 class="clients-name fw600">Vito Corleone</h3>
+                        <span class="clients-major">Businessman</span>
+                        <p class="clients-feedback text-p">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+                    </div>
+                </div>
             </section>
             <iframe id="video" src="" frameborder="0">
             </iframe>
