@@ -6,6 +6,10 @@
     --grey-dark:#272E35;
     --grey-light: #f3f3f3;
     --pink: #FF858C;
+    --rating-primary: #FFCB46;
+    --rating-secondary: #FFEAB5;
+    --grey-purple: #3A334F;
+    --background-color: #fbfbfb;
 }
 
 *, *::before, *::after {
@@ -407,16 +411,13 @@ intro > * {
     border-color: transparent;
     box-shadow: 0 0 3rem .1rem rgba(0, 0, 0, .06);
 }
-
 .clients-image{
     width: 40%
 }
-
 .clients-name{
     margin-top: 2rem;
     padding-bottom: 1rem;
 }
-
 .clients-major{
     color: var(--grey);
     display: block;
@@ -424,31 +425,47 @@ intro > * {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
 }
+.clients-rating {
+    color: var(--rating-secondary);
+}
+.checked {
+    color: var(--rating-primary);
+}
 
-.clients-feedback{
+.studio {
+    background-color: var(--background-color);
+    margin: 10rem auto 5rem;
+    border-radius: 4rem;
+    max-width: 90rem;
+    position: relative;
+    padding: 6rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.studio-desc {
+    width: 24.5rem;
+    margin-bottom: 3rem;
+}
+.studio-button-links {
+    padding: 3rem 0;
+}
+.studio-color {
+    color: var(--grey-purple);
+}
+.studio .block .block-caption {
+    font-weight: 500;
+}
+
+.studio-smile{
 
 }
 
-.clients-profile{
+.studio-chat{
 
 }
-
-.clients-avatar{
-
-}
-
-.clients-profile{
-
-}
-
-.clients-avatar{
-
-}
-
-.clients-image{
-
-}
-
 
 
 
@@ -470,7 +487,9 @@ input {
     margin-left: 1rem;
 }
 
-
+.footer {
+    margin-top: 50rem;
+}
 .copyright {
     text-align: center;
     background-color: #f1f1f1;
