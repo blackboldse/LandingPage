@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
+        <div class="container" id="home">
             <header id="header" class="header shadow header-transparent">
                 <a href="index.html" class="logo side-left">
                     <img id="header-img"  src="./assets/img/logo.png" srcset="./assets/img/logo.png 2x" alt="logoZulu">
@@ -53,12 +53,12 @@
                     </p>
                     <div class="hero-button-links">
                         <a href="#" class="button button--primary">Get started</a>
-                        <a href="#" class="button button--outline">How it works?</a>
+                        <a href="#howitworks" class="button button--outline">How it works?</a>
                     </div>
                 </div>
                 <img src="./assets/img/hero.png" srcset="./assets/img/hero.png 2x" alt="banner-marketing" class="hero-image">
             </section>
-            <section class="work">
+            <section class="work" id="howitworks">
                 <div class="block">
                     <span class="block-caption">Walk-Through</span>
                     <h2 class="block-title">
@@ -113,7 +113,7 @@
                 </div>
                 <img src="./assets/img/content.png" srcset="./assets/img/content.png 2x" alt="intro marketing" class="intro-image">
             </section>
-            <section class="plan">
+            <section class="plan" id="pricing">
                 <div class="block">
                     <span class="block-caption">Pricing</span>
                     <h2 class="block-title">
@@ -317,7 +317,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column" id="product">
                     <h3 class="footer-heading fw5">Product</h3>
                         <ul class="footer-links">
                             <li class="footer-link-item">
@@ -337,7 +337,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column" id="services">
                     <h3 class="footer-heading fw5">Services</h3>
                         <ul class="footer-links">
                             <li class="footer-link-item">
@@ -357,7 +357,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column" id="about">
                     <h3 class="footer-heading fw5">Company</h3>
                         <ul class="footer-links">
                             <li class="footer-link-item">
@@ -375,8 +375,21 @@
                         </ul>
                 </div>
             </footer>
-            <iframe id="video" src="" frameborder="0">
-            </iframe>
+            <section class="media">
+                <div class="block">
+                    <span class="block-caption">Zulu Video</span>
+                    <h2 class="block-title media-title">
+                        <span>Introduction for life</span> <span>a day</span>
+                    </h2>
+                    <iframe id="video" width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/May1UmMKwDo"
+                    title="Trying to be productive for a day"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
             <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         </div>
         <section class="contact">
