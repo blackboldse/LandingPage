@@ -48,7 +48,7 @@ input, button, textarea, select {
   */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    color: var(--grey-dark);
+    /* color: var(--grey-dark); */
 }
 
 p {
@@ -57,7 +57,6 @@ p {
 
 ul, li, a{
     list-style: none;
-    color: var(--grey-dark);
 }
 
 a{
@@ -68,10 +67,10 @@ a{
     display: grid;
     grid-column-gap: 5rem;
 }
-.fw500 {
+.fw5 {
     font-weight: 500;
 }
-.fw600 {
+.fw6 {
     font-weight: 600;
 }
 .fw7 {
@@ -91,9 +90,6 @@ a{
 .header {
     background-color: var(--white);
     justify-content: space-around;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,7 +101,7 @@ a{
     display: inline-block;
 }
 
-.header-logo {
+.logo {
     display: block;
     margin-right: 18rem;
 }
@@ -117,6 +113,9 @@ a{
 .nav-menu {
     display: flex;
     align-items: center;
+}
+.nav-link {
+    color: var(--grey-dark);
 }
 .nav-link:hover, .button--normal:hover {
     color: var(--primary-color);
@@ -460,14 +459,16 @@ intro > * {
 }
 
 .studio-smile{
-
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: translate(6rem, -4rem);
 }
-
 .studio-chat{
-
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
 }
-
-
 
 .contact {
     justify-content: center;
@@ -488,12 +489,63 @@ input {
 }
 
 .footer {
-    margin-top: 50rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    color: var(--grey-purple);
 }
+.footer-heading {
+    margin-bottom: 3rem;
+}
+.footer-link {
+    padding: 2rem 0;
+    display: block;
+    color: var(--grey-purple);
+}
+.footer-desc {
+    color: var(--grey-purple);
+    font-weight: 300;
+}
+.social-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.social-link {
+    display: inline-block;
+}
+.social-link + .social-link {
+    margin-left: 1rem;
+}
+.social-link-item {
+    color: var(--white);
+}
+.social-bg-google {
+    background-color: #FF7A79;
+}
+
+.social-bg-twitter {
+    background-color: #79B0FF ;
+}
+
+.social-bg-ins {
+    background-color: #FFB979;
+}
+
+
+
 .copyright {
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: var(--grey-purple);
     padding: 15px 0;
     color: var(--grey);
     font-size: 1.3rem;
+}
+.copyright-text {
+    color: var(--white);
+
 }
