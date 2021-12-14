@@ -491,8 +491,12 @@ input {
 .footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 8rem;
     color: var(--grey-purple);
+    padding-bottom: 8rem;
+}
+.footer-column:not(:first-child) {
+    margin-left: 5rem;
 }
 .footer-heading {
     margin-bottom: 3rem;
@@ -505,6 +509,9 @@ input {
 .footer-desc {
     color: var(--grey-purple);
     font-weight: 300;
+}
+.social-links {
+    padding: 3rem 0;
 }
 .social-icon {
     width: 4rem;
