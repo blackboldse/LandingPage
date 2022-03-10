@@ -1,3 +1,3 @@
 # LandingPage
 
-See the working here: https://blackboldse.github.io/LandingPage/
+See the working here: https://blackboldse.github.io/landing-page/
