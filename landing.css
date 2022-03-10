@@ -563,16 +563,7 @@ input {
 
 /* Responsive */
 
-@media only screen and (max-width: 1122px) {
-    #nav-menu {
-        display: none;
-    }
-    .nav-items:not(:first-child) {
-        margin-left: 4rem;
-    }
-}
-
-@media only screen and (max-width: 918px) {
+@media only screen and (max-width: 1164px) {
     #nav-menu {
         display: none;
     }
@@ -590,5 +581,8 @@ input {
     }
     .footer {
         grid-column-gap: 2.8rem;
+    }
+    .nav-items:not(:first-child) {
+        margin-left: 4rem;
     }
 }
