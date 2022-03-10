@@ -363,26 +363,7 @@ intro > * {
     margin-bottom: 3rem;
     border-bottom: .1rem solid var(--grey-light);
 }
-@media (max-width: 85rem) {
-    .plan {
-        flex-direction: column;
-    }
-    .plans-list {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-    .header-auth {
-        display: none;
-    }
-    .footer-column:not(:first-child) {
-        margin-left: 2rem;
-    }
-    .footer {
-        grid-column-gap: 2rem;
-        padding: 0 2rem;
-    }
-}
+
 .plans-dollar {
     vertical-align: top;
     font-size: 1.8rem;
@@ -582,6 +563,11 @@ input {
 
 /* Responsive */
 
-/* @media only screen and (max-width: 1023px) {
-
-} */
+@media only screen and (max-width: 1024px) {
+    #nav-menu {
+        display: none;
+    }
+    .nav-items:not(:first-child) {
+        margin-left: 4rem;
+    }
+}
