@@ -109,27 +109,6 @@ a{
     display: block;
     margin-right: 18rem;
 }
-@media (max-width: 60rem) {
-    header {
-        flex-wrap: wrap;
-    }
-}
-@media screen and (max-width: 10.63rem) {
-    .header {
-        margin: auto;
-    }
-    .logo {
-        display: block;
-    }
-}
-@media (max-width: 65rem) {
-    .logo {
-        margin-top: 1.5rem;
-        width: 100%;
-        position: relative;
-    }
-}
-
 .nav-items:not(:first-child) {
     margin-left: 7.4rem;
 }
@@ -600,3 +579,9 @@ input {
 .copyright-text {
     color: var(--white);
 }
+
+/* Responsive */
+
+/* @media only screen and (max-width: 1023px) {
+
+} */
