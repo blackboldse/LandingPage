@@ -566,6 +566,12 @@ input {
 
 /* Responsive */
 
+@media screen and (max-width: 740) {
+	#nav-bar,
+	.header-auth side-right {display: none;}
+	.work-list {display: block}
+}
+
 @media only screen and (max-width: 1164px) {
     #nav-menu {
         display: none;
